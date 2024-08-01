@@ -1,13 +1,15 @@
 {
-  "name": "portfolio",
+  "name": "Bhargav Ratnala",
+  "homepage": "https://bhargavratnala.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "gh-pages -d build",
+    "build": "vite build",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

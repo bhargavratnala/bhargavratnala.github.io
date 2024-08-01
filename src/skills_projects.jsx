@@ -61,7 +61,7 @@ function SkillSProjects(){
         <div className="min-h-full w-full pt-5" id='skills&projects'>
             <h1 className='flex justify-center items-center w-full h-10 my-5 text-xl font-bold md:text-base lg:text-xl xl:text-2xl'>Skills and Projects <img src={SkillsProjects} alt='skills and projects' className='w-14 h-14 mx-5 md:w-24 md:h-24' /></h1>
             <div className='mt-10'>
-                <h2 className='text-xl opacity-50 m-5 text-center'>Projets</h2>
+                <h2 className='text-xl opacity-50 m-5 text-center'>Projects</h2>
                 <div className='flex justify-center items-center flex-wrap py-5 mx-5'>
                     {projects}
                 </div>

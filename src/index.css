@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+
+.navButton{
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #5a5a5a,
+             -10px -10px 20px #ffffff;
+}
+
+.close span{
+    top: 20px;
+}
+
+.close span:nth-child(1){
+    transform: rotate(45deg);
+}
+
+.close span:nth-child(2){
+    transform: rotate(-45deg);
+}
+
+.close span:nth-child(3){
+    opacity: 0;
+}
+
+.closeNav{
+    display: none !important;
+}
+
+.active{
+    color: rgb(37 99 235);
+}
+
+.mainBody{
+    height: calc(100vh - 60px);
+}
+
+/* Star 1 */
+.star1{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 15%;
+    top: 20%;
+    border-radius: 2px;
+    transform: rotate(-21.73deg);
+}
+
+/* Star 2 */
+.star2{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 35%;
+    top: 20%;
+    border-radius: 2px;
+    transform: rotate(156.83deg);
+}
+
+/* Star 3 */
+.star3{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 139.08px;
+    bottom: 100px;
+    border-radius: 2px;
+    transform: rotate(18.66deg);
+}
+
+.wavingBot{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    left: 400px;
+    bottom: 50px;
+}
+
+#root{
+    font-family:  "Baskervville", "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(96 165 250);
+    border-radius: 5px;
+}
+
+.projectCard{
+    height: calc(100% - 60px);
+    font-family: "kalam", cursive;
+}
+
+.slick-slider{
+    width: calc(100% - 60px);
+    height: 100%;
+    margin-left: 30px;
+}
+
+.slick-list, .slick-track, .slick-slide, .slick-slide > div{
+    height: 100%;
+}
+
+.slick-arrow::before{
+    color: black;
+}
+
+.educationCard{
+    position: relative;
+    width: calc(100% - 110px);
+    margin-left: 85px !important;
+}
+
+.educationCard::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -102px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2876BE;
+    transform: translateY(-50%);
+}
+
+.educationCard::after{
+    content: var(--content);
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    width: 80px;
+    font-size: x-small;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .educationCard:nth-child(odd){
+        left: calc(-100% - 80px) !important;
+    }
+
+    .educationCard:nth-child(odd)::before{
+        left: calc(100% + 89px);
+    }
+    
+    .educationCard:nth-child(odd)::after{
+        left: calc(100% + 20px);
+    }
+}
+
+.contactImage{
+    background: linear-gradient(107.29deg, #FF3F45 -0.16%, #9724DD 98.12%);
+}
+
+
+@tailwind utilities;

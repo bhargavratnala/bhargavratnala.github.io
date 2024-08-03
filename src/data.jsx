@@ -10,7 +10,7 @@ const about = {
 }
 
 const projects_skills = {
-    projects_list: ['acm_codespace', 'prims_algorithm'],
+    projects_list: ['acm_codespace', 'prims_algorithm', 'toc_visualizer'],
     projects: {
         acm_codespace: {
             name: 'ACM Codespace',
@@ -55,9 +55,38 @@ const projects_skills = {
             thumbnail: '/images/prims_algo.png',
             images: ['/images/prims_algo.png'],
             techStack: ['html', 'css', 'js', 'canvas'],
-            demo: 'https://www.linkedin.com/posts/bhargav-ratnala-b996b722b_connections-html-css-activity-7198753828802891776-8px2?utm_source=share&utm_medium=member_desktop',
+            demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7198753828802891776/',
             source: 'https://github.com/bhargavratnala/prims-algorithm',
             link: 'https://bhargavratnala.github.io/prims-algorithm',
+        },
+        toc_visualizer: {
+            name: 'Prims Algorithm',
+            short_description: `Visualization of Working of TOC Models`,
+            long_description: `
+            <h1>Interactive Theory of Computation Web Application</h1>
+            <br />
+            <p>The Interactive Theory of Computation Web Application is an educational tool designed to make learning complex computational models both engaging and accessible. This web-based platform allows users to explore and experiment with fundamental concepts in the Theory of Computation through interactive simulations and visualizations.</p>
+            <br />
+            <h2>Key Features:</h2>
+            <ul>
+                <li><strong>Automata Simulators:</strong> Users can create and test deterministic and non-deterministic finite automata, pushdown automata, and Turing machines. These simulators offer real-time feedback, helping users visualize how different models process inputs and perform computations.</li>
+                <br />
+                <li><strong>Formal Language Visualizers:</strong> The application enables users to input regular expressions and context-free grammars, with immediate visual representations of their corresponding automata and parsing processes. This aids in understanding the relationship between language definitions and their computational models.</li>
+                <br />
+                <li><strong>Complexity Theory Insights:</strong> The platform provides interactive examples and explanations of complexity classes such as P, NP, and NP-complete. Users can explore problems within these classes and understand reduction techniques through practical demonstrations.</li>
+                <br />
+                <li><strong>Educational Resources:</strong> Comprehensive tutorials and practice exercises cover key topics, including definitions, theorems, and proofs. Interactive elements help reinforce learning and offer hands-on experience with theoretical concepts.</li>
+            </ul>
+            <br />
+            <p>Designed with a user-friendly drag-and-drop interface and supported by visualization libraries, the application caters to students, educators, and enthusiasts. It combines modern web technologies to offer a rich, interactive learning experience, aiming to deepen users' understanding of computational theory and its applications.</p>
+            <br />
+            <p>Check out the live demo and source code below!</p>`,
+            thumbnail: '/images/toc_visualizer.png',
+            images: ['/images/toc_visualizer.png', '/images/toc_visualizer2.png', '/images/toc_visualizer3.png'],
+            techStack: ['html', 'css', 'js', 'canvas'],
+            demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7225494083702513664/',
+            source: 'https://github.com/bhargavratnala/TOCmodelDemo',
+            link: 'https://bhargavratnala.github.io/TOCmodelDemo',
         },
     },
     skills: [

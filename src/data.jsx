@@ -197,7 +197,7 @@ const education = [
         description: 'I pursued a B.Tech degree, gaining in-depth technical knowledge, hands-on experience, and problem-solving skills in a dynamic engineering environment.',
         duration: `'2021-present'`,
         image: '/images/gmrit.png',
-        link: 'https://www.gmrit.org/'
+        link: 'https://www.gmrit.edu.in/'
     },
     {
         title: 'JNV',

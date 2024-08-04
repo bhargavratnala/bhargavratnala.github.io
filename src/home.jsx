@@ -19,9 +19,9 @@ function Home(){
                             />
                 </h2>
                 <div className='flex h-[50px] items-center'>
-                    <FaGithub className='text-3xl'/>
-                    <FaLinkedinIn className='text-3xl ml-5 hover:fill-blue-400'/>
-                    <FaYoutube className='text-3xl ml-5 hover:fill-red-600'/>
+                    <a href='https://github.com/bhargavratnala/'><FaGithub className='text-3xl'/></a>
+                    <a href='https://www.linkedin.com/in/bhargavratnala/'><FaLinkedinIn className='text-3xl ml-5 hover:fill-blue-400'/></a>
+                    <a href='https://www.youtube.com/@py_learn'><FaYoutube className='text-3xl ml-5 hover:fill-red-600'/></a>
                 </div>
             </div>
             <div className='w-4/5 sm:w-2/3 md:w-2/5'>

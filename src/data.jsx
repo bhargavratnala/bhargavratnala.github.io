@@ -178,7 +178,7 @@ const experience = [
         link: 'http://www.topnottchsofttsol.com/#/home'
     },
     {
-        company: 'Congent Web Services',
+        company: 'Cogent Web Services',
         role: 'Backend Developer',
         location: 'Online',
         duration: '3 months',

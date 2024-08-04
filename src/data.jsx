@@ -232,17 +232,17 @@ const contact = {
     socials: [
         {
             name: 'Instagram',
-            link: 'https://www.instagram.com/bhargavratnala/',
+            link: 'https://www.instagram.com/__bhargavratnala__/',
             icon: '/images/insta.svg',
         },
         {
             name: 'Facebook',
-            link: 'https://www.facebook.com/bhargavratnala/',
+            link: 'https://www.facebook.com/bhargav.ratanala',
             icon: '/images/fb.svg',
         },
         {
             name: 'Twitter',
-            link: 'https://twitter.com/bhargavratnala/',
+            link: 'https://x.com/bhargav_ratnala',
             icon: '/images/twitter.svg',
         },
         {

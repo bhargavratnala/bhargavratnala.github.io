@@ -4,7 +4,7 @@ const home = {
 }
 
 const about = {
-    content: `I'm a third-year Computer Science student at GMR Institute of Technology, deeply passionate about web development and machine learning (ML).
+    content: `I'm a final-year Computer Science student at GMR Institute of Technology, deeply passionate about web development and machine learning (ML).
     I thrive on challenges and approach every project with a collaborative mindset.
     Thank you for visiting my portfolio! Explore my projects and reach out for collaboration or idea-sharing.`,
 }
@@ -190,7 +190,7 @@ const experience = [
 const education = [
     {
         title: 'GMRIT',
-        name: 'GMER Institute of Technology',
+        name: 'GMR Institute of Technology',
         location: 'Srikakulam, India',
         degree: 'Undergraduation',
         grade: '8.74',

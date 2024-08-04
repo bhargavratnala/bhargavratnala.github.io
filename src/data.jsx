@@ -92,8 +92,78 @@ const projects_skills = {
     skills: [
         {
             name: 'Python',
-            image: '/images/python.svg',
+            path: 'python',
             description: 'high-level general-purpose programming language.',
+        },
+        {
+            name: 'JavaScript',
+            path : 'js',
+            description: 'high-level programming language for web development.',
+        },
+        {
+            name: 'HTML',
+            path: 'html',
+            description: 'standard markup language for creating web pages.',
+        },
+        {
+            name: 'CSS',
+            path: 'css',
+            description: 'style sheet language used for describing the look and formatting of a document.',
+        },
+        {
+            name: 'React',
+            path: 'react',
+            description: 'JavaScript library for building user interfaces.',
+        },
+        {
+            name: 'Django',
+            path: 'django',
+            description: 'high-level Python web framework.',
+        },
+        {
+            name: 'Laravel',
+            path: 'laravel',
+            description: 'open-source PHP web framework.',
+        },
+        {
+            name: 'MySQL',
+            path: 'mysql',
+            description: 'open-source relational database management system.',
+        },
+        {
+            name: 'Git',
+            path: 'git',
+            description: 'distributed version control system.',
+        },
+        {
+            name: 'C++',
+            path: 'cpp',
+            description: 'general-purpose programming language.',
+        },
+        {
+            name: 'Java',
+            path: 'java',
+            description: 'high-level programming language.',
+        },
+        {
+            name: 'TensorFlow',
+            path: 'tensorflow',
+            description: 'open-source machine learning framework.',
+        },
+        {
+            name: 'Pandas',
+            path: 'pandas',
+            description: 'open-source data analysis and manipulation tool.',
+        },
+        {
+            name: 'Scikit-learn',
+            path: 'scikit-learn',
+            description: 'open-source machine learning library.',
+        },
+        {
+            name: 'Numpy',
+            path: 'numpy',
+            description: 'open-source numerical computing library.',
         },
     ],
 }
@@ -124,7 +194,7 @@ const education = [
         location: 'Srikakulam, India',
         degree: 'Undergraduation',
         grade: '8.74',
-        description: 'Project 1 long description',
+        description: 'I pursued a B.Tech degree, gaining in-depth technical knowledge, hands-on experience, and problem-solving skills in a dynamic engineering environment.',
         duration: `'2021-present'`,
         image: '/images/gmrit.png',
         link: 'https://www.gmrit.org/'
@@ -134,7 +204,7 @@ const education = [
         name: 'Jawahar Navodaya Vidyalaya',
         location: 'Srikakulam, India',
         degree: 'Secondary Education',
-        description: 'Project 2 long description',
+        description: 'I excelled academically and developed strong leadership skills, critical thinking, and a well-rounded character.',
         grade: '91.2%',
         board: 'CBSE',
         duration: `'2019-2021'`,
@@ -146,7 +216,7 @@ const education = [
         name: 'Jawahar Navodaya Vidyalaya',
         location: 'Srikakulam, India',
         degree: 'Primary Education',
-        description: 'Project 2 long description',
+        description: 'I received a holistic education emphasizing academic excellence, leadership, and cultural values in a diverse environment.',
         grade: '82.6%',
         board: 'CBSE',
         duration: `'2014-2019'`,

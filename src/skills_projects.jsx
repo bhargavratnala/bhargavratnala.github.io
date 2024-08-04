@@ -1,9 +1,10 @@
 import SkillsProjects from './asserts/skills_projects.svg'
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Carousel from './carousel.jsx';
 import { projects_skills } from './data';
+import IconLoader from './IconLoader.jsx';
+import { useState, useEffect, Suspense } from 'react';
 
 function SkillSProjects(){
 
@@ -47,7 +48,7 @@ function SkillSProjects(){
         return (
             <div className='group h-20 p-3 mx-10 my-3 flex justify-center items-center border-neutral-5000 border-2 shadow-lg cursor-pointer rounded-md hover:shadow-2xl' key={index}>
                 <div className='w-10 h-10 ml-2 flex justify-center items-center flex-col'>
-                    <img src={skill.image} alt='skill' className='w-16 h-16 object-cover object-center'/>
+                    <IconLoader path={skill.path} />
                 </div>
                 <div className='mx-3 w-36 transition-all'>
                     <p className='group-hover:text-blue-400'>{skill.name}</p>

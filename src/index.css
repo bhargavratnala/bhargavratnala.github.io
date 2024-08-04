@@ -116,43 +116,45 @@
 
 .educationCard{
     position: relative;
-    width: calc(100% - 110px);
-    margin-left: 85px !important;
 }
 
 .educationCard::before{
     content: "";
     position: absolute;
-    top: 50%;
-    left: -102px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #2876BE;
-    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgb(59 130 246 );
+    border-radius: 100%;
+    left: -43px;
 }
 
 .educationCard::after{
     content: var(--content);
     position: absolute;
-    top: 50%;
-    left: -70px;
-    width: 80px;
-    font-size: x-small;
-    transform: translateY(-50%);
+    font-size: 1.2rem;
+    width: 150px;
+    bottom: 15px;
+    right: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
     .educationCard:nth-child(odd){
-        left: calc(-100% - 80px) !important;
+        left: calc(-100% - 4px);
     }
 
     .educationCard:nth-child(odd)::before{
-        left: calc(100% + 89px);
+        left: calc(100% + 2px);
+    }
+
+    .educationCard::after{
+        bottom: 50%;
+        transform: translate(calc(100% + 60px), 50%);
     }
     
-    .educationCard:nth-child(odd)::after{
-        left: calc(100% + 20px);
+    .educationCard:nth-child(even)::after{
+        right: 100%;
+        text-align: right;
+        transform: translate(calc(-60px), 50%);
     }
 }
 

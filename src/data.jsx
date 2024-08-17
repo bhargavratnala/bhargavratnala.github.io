@@ -35,7 +35,7 @@ const projects_skills = {
             techStack: ['Django', 'MySQL', 'HTML', 'CSS', 'JS', 'Python'],
             demo: 'https://www.linkedin.com/posts/bhargav-ratnala-b996b722b_portfolio-design-development-activity-7090639547461419008-5876?utm_source=share&utm_medium=member_desktop',
             source: 'https://github.com/bhargavratnala/codespace',
-            link: 'https://bhargavratnala.github.io',
+            link: 'https://gmritchapter.acm.org/codespace/',
         },
         prims_algorithm: {
             name: 'Prims Algorithm',

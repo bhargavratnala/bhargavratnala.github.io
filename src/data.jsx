@@ -60,7 +60,7 @@ const projects_skills = {
             link: 'https://bhargavratnala.github.io/prims-algorithm',
         },
         toc_visualizer: {
-            name: 'Prims Algorithm',
+            name: 'TOC Visualizer',
             short_description: `Visualization of Working of TOC Models`,
             long_description: `
             <h1>Interactive Theory of Computation Web Application</h1>

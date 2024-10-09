@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Carousel from './carousel.jsx';
 import { projects_skills } from './data';
 import IconLoader from './IconLoader.jsx';
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 
 function SkillSProjects(){
 
@@ -20,7 +20,7 @@ function SkillSProjects(){
             setProjectOpen(true);
             setProjectData(projects_skills.projects[projectName]);
         }
-    });
+    }, [projectName]);
 
     const projects = projects_list.map((projectName, index) => {
         let project = projects_skills.projects[projectName];

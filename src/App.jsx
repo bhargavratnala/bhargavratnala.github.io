@@ -5,7 +5,7 @@ import SkillsProjects from './skills_projects.jsx'
 import Education from './education.jsx'
 import Experience from './experience.jsx'
 import Contact from './contact.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -15,12 +15,12 @@ function App() {
       <div className='w-full mainBody overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar' id="scroll-element">
         <Home />
         <About />
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<SkillsProjects />}></Route>
             <Route path='/:projectName' element={<SkillsProjects />}></Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         <Experience />
         <Education />
         <Contact />

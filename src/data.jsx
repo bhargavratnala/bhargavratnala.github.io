@@ -88,6 +88,28 @@ const projects_skills = {
             source: 'https://github.com/bhargavratnala/TOCmodelDemo',
             link: 'https://bhargavratnala.github.io/TOCmodelDemo',
         },
+        2048: {
+            name: '2048 Game',
+            short_description: `2048 Game`,
+            long_description: `
+            <p>2048 Game is a web application that replicates the popular 2048 puzzle game, where players combine numbered tiles to reach the 2048 tile.</p>
+            <br />
+            <p>The game features a grid of tiles that can be moved in four directions: up, down, left, and right. When two tiles with the same number collide, they merge into one tile with the sum of their values.</p>
+            <br />
+            <p>Players aim to reach the 2048 tile by strategically moving the tiles and combining them to create higher-valued tiles.</p>
+            <br />
+            <p>2048 Game is built using React, a JavaScript library for building user interfaces. The application leverages React's component-based architecture to manage the game state, user interactions, and rendering logic.</p>
+            <br />
+            <p>I developed this project independently, focusing on creating an engaging and interactive game experience. I aimed to replicate the addictive gameplay of the original 2048 game while adding my unique design elements and features.</p>
+            <br />
+            <p>Check out the live demo and source code below!</p>`,
+            thumbnail: '/images/2048.png',
+            images: ['/images/2048.png'],
+            techStack: ['HTML', 'JS', 'CSS'],
+            demo: 'https://www.linkedin.com/posts/bhargavratnala_webdevelopment-gamedevelopment-html-activity-7227999642024603648-Uxxg',
+            source: 'https://github.com/bhargavratnala/2048',
+            link: 'https://bhargavratnala.github.io/2048/',
+        },
     },
     skills: [
         {

@@ -206,6 +206,14 @@ const experience = [
         duration: '3 months',
         image: '/images/cws_logo.png',
         link: 'https://cwservices.co.in/'
+    },
+    {
+        company: 'GMR Institute of Technology',
+        role: 'JRF',
+        location: 'Srikakulam',
+        duration: 'May 2024 - Present',
+        image: '/images/GMRIT_Logo.jpg',
+        link: 'https://www.gmrit.edu.in/'
     }
 ]
 

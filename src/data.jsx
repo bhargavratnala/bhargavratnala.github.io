@@ -10,7 +10,7 @@ const about = {
 }
 
 const projects_skills = {
-    projects_list: ['acm_codespace', 'prims_algorithm', 'toc_visualizer'],
+    projects_list: ['acm_codespace', 'prims_algorithm', 'toc_visualizer', '2048'],
     projects: {
         acm_codespace: {
             name: 'ACM Codespace',

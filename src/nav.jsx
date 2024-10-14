@@ -5,6 +5,10 @@ function Nav(){
 
     const [navOpen, setNavOpen] = useState(false);
 
+    function scrollTo(id){
+        document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+    }
+
     useEffect(() => {
         document.getElementById('scroll-element').addEventListener('scroll', () => {
             let scrollPosition = document.getElementById('scroll-element').scrollTop;
@@ -46,12 +50,12 @@ function Nav(){
                 <h1 className='m-3 text-xl md:text-base lg:text-lg xl:text-xl'>Bhargav Ratnala</h1>
             </div>
             <ul className='hidden h-full items-center mx-2 md:flex sm:text-sm md:text-base lg:text-lg xl:text-xl' id="nav">
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200 active' onClick={() => window.location.href='#home'}>Home</li>
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => window.location.href='#about'}>About</li>
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => window.location.href='#skills&projects'}>Skills & Projects</li>
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => window.location.href='#experience'}>Experience</li>
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => window.location.href='#education'}>Education</li>
-                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => window.location.href='#contact'}>Contact</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200 active' onClick={() => scrollTo('home')}>Home</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => scrollTo('about')}>About</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => scrollTo('skills&projects')}>Skills & Projects</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => scrollTo('experience')}>Experience</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => scrollTo('education')}>Education</li>
+                <li className='p-3 cursor-pointer h-[60px] flex items-center justify-center hover:text-blue-600 hover:bg-blue-200' onClick={() => scrollTo('contact')}>Contact</li>
             </ul>
             <div className='bg-white md:hidden'>
                 <div className={ navOpen ? 'absolute w-[40px] h-[40px] top-[10px] right-[10px] cursor-pointer rounded-full navButton close' : 'absolute w-[40px] h-[40px] top-[10px] right-[10px] cursor-pointer rounded-full navButton'} onClick={() => setNavOpen(~navOpen)}>

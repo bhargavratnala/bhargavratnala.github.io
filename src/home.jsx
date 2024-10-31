@@ -9,9 +9,9 @@ function Home(){
     return(
         <div className='flex flex-col items-center justify-around h-full md:flex-row relative' id='home'>
             <div className='my-5'>
-                <h1 className='text-xl font-medium md:text-2xl lg:text-3xl xl:text-4xl'>Hello 👋, I'm <span className='font-bold text-indigo-500'>{home.name}</span></h1>
+                <h1 className='text-xl font-medium md:text-2xl lg:text-3xl xl:text-4xl'>Hello 👋, I&apos;m <span className='font-bold text-indigo-500'>{home.name}</span></h1>
                 <h2 className='text-base font-medium my-5 md:text-lg lg:text-xl xl:text-2xl'>
-                    I'm a <ReactTypingEffect 
+                    I&apos;m a <ReactTypingEffect 
                             text={home.roles}
                             speed={100}
                             eraseSpeed={50}

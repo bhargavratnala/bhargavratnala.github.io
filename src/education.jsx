@@ -37,12 +37,14 @@ function Education(){
     });
 
     return (
-        <div className="min-h-full w-full pt-5" id='education'>
-            <h1 className='flex justify-center items-center w-full h-10 my-5 text-xl font-bold md:text-base lg:text-xl xl:text-2xl'>Education <img src={EducationImage} alt='skills and projects' className='w-14 h-14 mx-5 md:w-24 md:h-24' /></h1>
-            <div className='w-full border-l-4 m-5 border-blue-500 md:w-1/2 md:ml-[50%]'>
-                {educations}
-                <div key={100} className="educationCard flex items-center py-3 px-5 mx-5 my-3 text-blue-500 font-bold" style={{'--content': ''}}>
-                    DOB 8<sup>th</sup>, May 2004
+        <div className="min-h-full w-full pt-5 flex flex-col items-center" id='education'>
+            <div className='w-full max-w-[1200px]'>
+                <h1 className='flex justify-center items-center w-full h-10 my-5 text-xl font-bold md:text-base lg:text-xl xl:text-2xl'>Education <img src={EducationImage} alt='skills and projects' className='w-14 h-14 mx-5 md:w-24 md:h-24' /></h1>
+                <div className='w-full border-l-4 m-5 border-blue-500 md:w-1/2 md:ml-[50%]'>
+                    {educations}
+                    <div key={100} className="educationCard flex items-center py-3 px-5 mx-5 my-3 text-blue-500 font-bold" style={{'--content': ''}}>
+                        DOB 8<sup>th</sup>, May 2004
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import About from './about.jsx'
 import SkillsProjects from './skills_projects.jsx'
 import Education from './education.jsx'
 import Experience from './experience.jsx'
+import Accounts from './Accounts.jsx'
 import Contact from './contact.jsx'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
@@ -23,6 +24,7 @@ function App() {
         </HashRouter>
         <Experience />
         <Education />
+        <Accounts />
         <Contact />
       </div>
     </>

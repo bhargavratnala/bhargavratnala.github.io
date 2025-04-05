@@ -94,7 +94,10 @@ function SkillSProjects(){
                         <button className='hover:text-red-500 w-8 h-8' onClick={() => {
                             setProjectOpen(false);
                             navigate('/');
-                        }}>
+                        }}
+                            title='Close'
+                            aria-label='Close project details'
+                        >
                             <IoMdCloseCircleOutline className='w-full h-full'/>
                         </button>
                     </div>
@@ -105,14 +108,14 @@ function SkillSProjects(){
                                 <div className='flex w-full mt-8'>
                                     { projectData.demo && <p className='text-sm bg-brown text-white px-5 rounded-md mx-3 cursor-pointer py-2' onClick={() => {
                                         window.open(projectData.demo, '_blank');
-                                    }}>Watch Demo</p> }
+                                    }} aria-label='watch demo' role='button' >Watch Demo</p> }
                                     { projectData.source && <p className='text-sm bg-brown text-white px-5 rounded-md mx-3 cursor-pointer py-2' onClick={() => {
                                         window.open(projectData.source, '_blank');
                                     }
-                                    }>Source Code</p> }
+                                    } aria-label='Source Code' role='button' >Source Code</p> }
                                     { projectData.link && <p className='text-sm bg-brown text-white px-5 rounded-md mx-3 cursor-pointer py-2' onClick={() => {
                                         window.open(projectData.link, '_blank');
-                                    }}>Deployment</p> }
+                                    }} aria-label='Live Demonstation' role='button' >Deployment</p> }
                                 </div>
                                 <p className='text-lg mt-5 text-black/50'>tags</p>
                                 <div className='flex w-full flex-wrap'>

@@ -5,6 +5,7 @@ import Carousel from './carousel.jsx';
 import { projects_skills } from './data';
 import IconLoader from './IconLoader.jsx';
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 function SkillSProjects(){
 
@@ -17,8 +18,19 @@ function SkillSProjects(){
 
     useEffect(() => {
         if(projectName){
-            setProjectOpen(true);
+            if(!projects_skills.projects[projectName]){
+                toast.error('Project not found', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                });
+                navigate('/');
+                return;
+            }
             setProjectData(projects_skills.projects[projectName]);
+            setProjectOpen(true);
         }
     }, [projectName]);
 

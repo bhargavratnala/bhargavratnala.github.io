@@ -283,4 +283,13 @@ const contact = {
     ]
 }
 
-export { home, about, projects_skills, experience, education, contact };
+const gate_details = {
+    gate_score: 483,
+    gate_rank: 7912,
+    gate_marks: 42.24,
+    gate_year: 2025,
+    gate_branch: 'CSE',
+    conducted_by: 'IIT Roorkee',
+}
+
+export { home, about, projects_skills, experience, education, contact, gate_details };

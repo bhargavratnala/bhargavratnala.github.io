@@ -7,6 +7,7 @@ import Experience from './experience.jsx'
 import Accounts from './Accounts.jsx'
 import Contact from './contact.jsx'
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Education />
         <Accounts />
         <Contact />
+        <ToastContainer />
       </div>
     </>
   )

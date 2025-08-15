@@ -1,6 +1,7 @@
 import ContactImage from './asserts/contact.svg'
 import MeRB from './asserts/icon_rb.png'
 import {contact} from './data'
+import { toast } from 'react-toastify'
 
 function Contact(){
 
@@ -11,19 +12,24 @@ function Contact(){
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
 
-        const response = await fetch(mail_url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
+        try{
+            const response = await fetch(mail_url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-        if (response.ok) {
-            alert('Email sent successfully!');
-            e.target.reset();
-        } else {
-            alert('Error sending email.');
+            if (response.ok) {
+                toast.success('Email sent successfully!');
+                e.target.reset();
+            } else {
+                toast.error('Error sending email.');
+            }
+        } catch (error) {
+            console.error('Error sending email:', error);
+            toast.error('Error sending email.');
         }
     };
 
@@ -36,10 +42,10 @@ function Contact(){
     });
 
     return (
-        <div className="min-h-full w-full pt-5 pb-10" id='contact'>
+        <div className="min-h-full w-full pt-5 pb-10:" id='contact'>
             <h1 className='flex justify-center items-center w-full h-10 my-5 text-xl font-bold md:text-base lg:text-xl xl:text-2xl'>Contact <img src={ContactImage} alt='contact' className='w-14 h-14 mx-5 md:w-24 md:h-24' /></h1>
-            <div className='w-full h-full flex justify-center items-center'>
-                <div className='group w-[95%] h-full border-black/30 border-2 rounded-2xl overflow-hidden md:w-1/2 lg:w-1/3'>
+            <div className='w-full h-full flex flex-wrap justify-center items-center'>
+                <div className='group h-full border-black/30 border-2 rounded-2xl overflow-hidden md:w-1/2 lg:w-1/3 m-2'>
                     <div className='w-full h-52 flex justify-center contactImage'>
                         <img src={MeRB} alt='contact' className='h-[90%] m-3 p-3 object-contain bg-black/40 rounded-xl group-hover:scale-105 transition-all'/>
                     </div>
@@ -52,13 +58,13 @@ function Contact(){
                         </div>
                     </div>
                 </div>
-                <form className="group w-[95%] h-full border-black/30 border-2 rounded-2xl overflow-hidden md:w-1/2 lg:w-1/3 ml-4 p-6 flex flex-col justify-center items-center bg-white"
+                <form className="group w-full h-full border-black/30 border-2 rounded-2xl overflow-hidden md:w-1/2 lg:w-1/3 p-6 flex flex-col justify-center items-center m-2"
                     onSubmit={handleSubmit}>
                     <label className="w-full mb-3">
-                      <span className="block font-semibold mb-1">Email</span>
+                      <span className="block font-semibold mb-1">Mail</span>
                       <input
-                        type="email"
-                        name="email"
+                        type="mail"
+                        name="mail"
                         required
                         className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         placeholder="your@email.com"

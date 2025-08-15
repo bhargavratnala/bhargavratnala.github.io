@@ -29,6 +29,7 @@ function App() {
         <Contact />
         <ToastContainer />
       </div>
+      <ToastContainer />
     </>
   )
 }

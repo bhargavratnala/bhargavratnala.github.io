@@ -2,6 +2,7 @@ import ContactImage from './asserts/contact.svg'
 import MeRB from './asserts/icon_rb.png'
 import {contact} from './data'
 import { toast } from 'react-toastify'
+import {useState} from 'react'
 
 function Contact(){
 
@@ -41,6 +42,8 @@ function Contact(){
         );
     });
 
+    const [loading, setLoading] = useState(false);
+
     return (
         <div className="min-h-full w-full pt-5 pb-10:" id='contact'>
             <h1 className='flex justify-center items-center w-full h-10 my-5 text-xl font-bold md:text-base lg:text-xl xl:text-2xl'>Contact <img src={ContactImage} alt='contact' className='w-14 h-14 mx-5 md:w-24 md:h-24' /></h1>
@@ -59,7 +62,11 @@ function Contact(){
                     </div>
                 </div>
                 <form className="group w-full h-full border-black/30 border-2 rounded-2xl overflow-hidden md:w-1/2 lg:w-1/3 p-6 flex flex-col justify-center items-center m-2"
-                    onSubmit={handleSubmit}>
+                    onSubmit={async (e) => {
+                        setLoading(true);
+                        await handleSubmit(e);
+                        setLoading(false);
+                    }}>
                     <label className="w-full mb-3">
                       <span className="block font-semibold mb-1">Mail</span>
                       <input
@@ -68,6 +75,7 @@ function Contact(){
                         required
                         className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         placeholder="your@email.com"
+                        disabled={loading}
                       />
                     </label>
                     <label className="w-full mb-3">
@@ -78,6 +86,7 @@ function Contact(){
                         required
                         className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         placeholder="Subject"
+                        disabled={loading}
                       />
                     </label>
                     <label className="w-full mb-4">
@@ -88,13 +97,21 @@ function Contact(){
                         rows={5}
                         className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
                         placeholder="Type your message here..."
+                        disabled={loading}
                       />
                     </label>
                     <button
                       type="submit"
-                      className="bg-blue-600 text-white px-6 py-2 rounded font-bold hover:bg-blue-700 transition"
+                      className="bg-blue-600 text-white px-6 py-2 rounded font-bold hover:bg-blue-700 transition flex items-center justify-center"
+                      disabled={loading}
                     >
-                      Send
+                      {loading ? (
+                        <svg className="animate-spin h-5 w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                        </svg>
+                      ) : null}
+                      {loading ? "Sending..." : "Send"}
                     </button>
                 </form>
             </div>

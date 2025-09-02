@@ -211,9 +211,17 @@ const experience = [
         company: 'GMR Institute of Technology',
         role: 'JRF',
         location: 'Srikakulam',
-        duration: 'May 2024 - Present',
+        duration: 'May 2024 - May 2025',
         image: '/images/GMRIT_Logo.jpg',
         link: 'https://www.gmrit.edu.in/'
+    },
+    {
+        company: 'TCS',
+        role: 'System Engineer',
+        location: 'Chennai',
+        duration: 'July 2025 - Present',
+        image: '/images/tcs.jpg',
+        link: 'https://www.tcs.com'
     }
 ]
 
@@ -225,7 +233,7 @@ const education = [
         degree: 'Undergraduation',
         grade: '8.74',
         description: 'I pursued a B.Tech degree, gaining in-depth technical knowledge, hands-on experience, and problem-solving skills in a dynamic engineering environment.',
-        duration: `'2021-present'`,
+        duration: `'2021-2025'`,
         image: '/images/gmrit.png',
         link: 'https://www.gmrit.edu.in/'
     },

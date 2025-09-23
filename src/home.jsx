@@ -1,4 +1,5 @@
 import landingImage from './asserts/landingImage.webp'
+import landingImageDesktop from './asserts/landingImage.svg'
 import star from './asserts/star.svg'
 import wavingBot from './asserts/robo_wave.gif'
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
@@ -25,7 +26,10 @@ function Home(){
                 </div>
             </div>
             <div className='w-4/5 sm:w-2/3 md:w-2/5'>
-                <img src={landingImage} alt="Landing Image" className='w-full h-full object-contain'/>
+                <picture>
+                    <source srcSet={landingImageDesktop} media="(min-width: 768px)" type="image/svg+xml" />
+                    <img src={landingImage} alt="Landing Image" className="w-full h-full object-contain" />
+                </picture>
             </div>
             <div className='hidden absolute w-full h-full -z-10 md:flex'>
                 <img src={star} alt="Star Decoration 1" className='w-10 h-10 star1'/>

@@ -212,6 +212,7 @@ const experience = [
         role: 'JRF',
         location: 'Srikakulam',
         duration: 'May 2024 - May 2025',
+        duration: 'May 2024 - May 2025',
         image: '/images/GMRIT_Logo.jpg',
         link: 'https://www.gmrit.edu.in/'
     },
@@ -233,6 +234,7 @@ const education = [
         degree: 'Undergraduation',
         grade: '8.74',
         description: 'I pursued a B.Tech degree, gaining in-depth technical knowledge, hands-on experience, and problem-solving skills in a dynamic engineering environment.',
+        duration: `'2021-2025'`,
         duration: `'2021-2025'`,
         image: '/images/gmrit.png',
         link: 'https://www.gmrit.edu.in/'

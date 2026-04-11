@@ -4,9 +4,11 @@ const home = {
 }
 
 const about = {
-    content: `I'm a final-year Computer Science student at GMR Institute of Technology, deeply passionate about web development and machine learning (ML).
-    I thrive on challenges and approach every project with a collaborative mindset.
-    Thank you for visiting my portfolio! Explore my projects and reach out for collaboration or idea-sharing.`,
+    content: <span>I am a Machine Learning Engineer at <a href="https://tcs.com" target="_blank" className="hover:text-blue-400">Tata Consultancy Services</a>, working on cutting-edge Generative AI projects. With a strong foundation in web development and machine learning, I focus on building intelligent, scalable solutions that solve real-world problems.
+
+I enjoy tackling complex challenges and thrive in collaborative environments, where I can contribute to innovative, AI-driven systems. My work bridges modern web technologies with advanced ML and GenAI capabilities to create impactful products.
+
+Thank you for visiting my portfolio! Feel free to explore my projects and connect with me for collaboration or idea-sharing.</span>,
 }
 
 const projects_skills = {
